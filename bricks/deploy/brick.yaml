@@ -1,0 +1,70 @@
+name: deploy_config
+description: A brick to generate .deploy-configs file and deploy.sh
+
+# The following defines the brick repository url.
+# Uncomment and update the following line before publishing the brick.
+# repository: https://github.com/my_org/my_repo
+
+# The following defines the version and build number for your brick.
+# A version number is three numbers separated by dots, like 1.2.34
+# followed by an optional build number (separated by a +).
+version: 1.0.0+1
+
+# The following defines the environment for the current brick.
+# It includes the version of mason that the brick requires.
+environment:
+  mason: ">=0.1.0-dev.57 <0.1.0"
+
+vars:
+  # Package Names
+  development_package_name: 
+    type: string
+    description: Deployment Package Name
+    default: com.example.development
+  production_package_name: 
+      type: string
+      description: Production Package Name
+      default: com.example.production
+  staging_package_name: 
+    type: string
+    description: Staging Package Name
+    default: com.example.staging
+  # Firebase Project Ids
+  development_firebase_project_id: 
+    type: string
+    description: Development Firebase Project Id
+    default: development-project-id
+  production_firebase_project_id: 
+    type: string
+    description: Production Firebase Project Id
+    default: production-project-id
+  staging_firebase_project_id: 
+      type: string
+      description: Staging Firebase Project Id
+      default: staging-project-id
+  # App Ids
+  development_android_app_id: 
+    type: string
+    description: Development Android App Id
+    default: 1:1234567890:android:abcdef123456
+  staging_android_app_id: 
+    type: string
+    description: Staging Android App Id
+    default: 1:1234567890:android:abcdef123456
+  production_android_app_id: 
+    type: string
+    description: Production Android App Id
+    default: 1:1234567890:android:abcdef123456
+ # IOS APP IDS
+  development_ios_app_id: 
+    type: string
+    description: Development iOS App Id
+    default: 1:1234567890:ios:abcdef123456
+  staging_ios_app_id: 
+    type: string
+    description: Staging iOS App Id
+    default: 1:1234567890:ios:abcdef123456
+  production_ios_app_id: 
+    type: string
+    description: Production iOS App Id
+    default: 1:1234567890:android:abcdef123456

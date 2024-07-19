@@ -1,0 +1,14 @@
+development_package_name="{{development_package_name}}"
+development_firebase_project_id="{{development_firebase_project_id}}"
+development_android_app_id="{{development_android_app_id}}"
+development_ios_app_id="{{development_ios_app_id}}"
+
+production_package_name="{{production_package_name}}"
+production_firebase_project_id="{{production_firebase_project_id}}"
+production_android_app_id="{{production_android_app_id}}"
+production_ios_app_id="{{production_ios_app_id}}"
+
+staging_package_name="{{staging_package_name}}"
+staging_firebase_project_id="{{staging_firebase_project_id}}"
+staging_android_app_id="{{staging_android_app_id}}"
+staging_ios_app_id="{{staging_ios_app_id}}"
